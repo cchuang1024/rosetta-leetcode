@@ -7,8 +7,10 @@ class Solution:
 
         for i in range(len(nums)):
             comp = (target - nums[i])
+
             if comp in his:
                 return [his[comp], i]
+
 
             his[nums[i]] = i
 

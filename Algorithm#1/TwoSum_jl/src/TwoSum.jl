@@ -10,7 +10,7 @@ function solution(nums::Array{Int64,1}, target::Int64)::Array{Int64,1}
             return [get(hist, comp, 0), i]
         end
 
-        hist[comp] = i
+        hist[nums[i]] = i
     end
 
     return []
